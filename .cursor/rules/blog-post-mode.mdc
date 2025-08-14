@@ -1,0 +1,6 @@
+---
+description: When requested to write a blog post
+alwaysApply: false
+---
+
+Follow the rules in [ai-rules/blog-post-mode.md](../ai-rules/blog-post-mode.md)
