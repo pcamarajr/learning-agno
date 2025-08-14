@@ -14,6 +14,8 @@ This file captures insights, feedback, and learnings organized by concepts rathe
 - **Configuration:** 4 threads, 1 loaded model for optimal performance
 - **Health Checks:** Every 30s with automatic restart policy
 - **Key Insight:** Local LLM setup eliminates API costs and enables unlimited experimentation
+- **Connection:** Use `host="http://ollama:11434"` for devcontainer setup
+- **Model Loading:** `llama3.2:3b` model successfully loaded and tested
 
 ### Development Environment
 
@@ -21,6 +23,8 @@ This file captures insights, feedback, and learnings organized by concepts rathe
 - **Ports:** 8888 (Jupyter), 8000 (Dev Server), 11434 (Ollama)
 - **Extensions:** Python, Jupyter, debugging, formatting tools
 - **Key Insight:** Isolated environment prevents conflicts and ensures reproducibility
+- **Python Setup:** Virtual environments with `uv` for modern package management
+- **Dependencies:** `agno`, `ollama`, `yfinance` successfully installed and tested
 
 ---
 
@@ -99,15 +103,15 @@ This file captures insights, feedback, and learnings organized by concepts rathe
 - [x] Development environment setup
 - [x] Container configuration
 - [x] Journal structure established
-- [ ] First Agno agent created
-- [ ] Basic tool integration mastered
+- [x] First Agno agent created
+- [x] Basic tool integration mastered
 
 ### Environment Verification
 
 - [x] Ollama service running
 - [x] Python environment configured
 - [x] Dependencies installed
-- [ ] First agent test successful
+- [x] First agent test successful
 
 ---
 
@@ -128,7 +132,7 @@ This file captures insights, feedback, and learnings organized by concepts rathe
 
 ---
 
-**Last Updated:** December 19, 2024  
-**Next Update:** After first Agno agent creation
+**Last Updated:** August 14, 2025  
+**Next Update:** After Level 2 agent exploration
 
 **Tags:** #learning-memory #knowledge-base #agno #concepts

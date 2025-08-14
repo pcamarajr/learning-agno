@@ -1,6 +1,7 @@
 # Core dependencies
 agno>=0.1.0
 ollama>=0.1.7
+yfinance>=0.2.0
 
 # Development tools
 jupyter>=1.0.0
