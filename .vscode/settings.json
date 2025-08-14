@@ -1,0 +1,13 @@
+{
+  "python.defaultInterpreterPath": "/usr/local/bin/python",
+  "python.terminal.activateEnvironment": false,
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "files.associations": {
+    "*.py": "python"
+  },
+  "python.analysis.extraPaths": ["./src"],
+  "python.testing.pytestArgs": ["tests"],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "cursorpyright.analysis.extraPaths": ["./src"]
+}
