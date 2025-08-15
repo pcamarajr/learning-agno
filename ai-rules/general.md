@@ -30,6 +30,19 @@ These rules ensure consistent, high-quality AI assistance throughout the Agno le
 - **Purpose:** Build a growing knowledge base for future reference
 - **Implementation:** Categorize learnings by concepts (Tools, Workflows, Debugging, etc.)
 
+### 5. **Conventional Commit Standards**
+
+- **Rule:** Follow conventional commit format for all git commits
+- **Purpose:** Maintain clear, standardized commit history for better project management
+- **Implementation:** Use format: `type(scope): description`
+  - **Types:** feat, fix, docs, style, refactor, test, chore
+  - **Scope:** Optional, describes the part of the codebase affected
+  - **Description:** Clear, concise description in present tense
+  - **Examples:** 
+    - `feat: add comprehensive .gitignore for Python project`
+    - `fix(api): resolve authentication token validation issue`
+    - `docs: update README with installation instructions`
+
 ## 🎯 Mode-Specific Rules
 
 ### **Journal Entry Mode**
