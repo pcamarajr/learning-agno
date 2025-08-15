@@ -17,6 +17,15 @@ This file captures insights, feedback, and learnings organized by concepts rathe
 - **Connection:** Use `host="http://ollama:11434"` for devcontainer setup
 - **Model Loading:** `llama3.2:3b` model successfully loaded and tested
 
+### Embedding Models & Local Infrastructure
+
+- **Local Embedding Models:** Successfully integrated nomic-embed-text (~1.5GB) via Ollama
+- **Top 3 Ollama Embedding Models:** nomic-embed-text (best), snowflake-arctic-embed2 (multilingual), snowflake-arctic-embed (English)
+- **Key Insight:** Local embeddings provide complete control, zero costs, and no network latency
+- **Integration:** Agno supports OllamaEmbedder for local embedding generation
+- **Challenge:** Vector database compatibility issues with LanceDB versions
+- **Learning:** AI delegation excellent for research, poor for technical debugging
+
 ### Development Environment
 
 - **Container Architecture:** Docker Compose with Python devcontainer
