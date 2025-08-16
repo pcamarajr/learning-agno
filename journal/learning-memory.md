@@ -26,6 +26,15 @@ This file captures insights, feedback, and learnings organized by concepts rathe
 - **Challenge:** Vector database compatibility issues with LanceDB versions
 - **Learning:** AI delegation excellent for research, poor for technical debugging
 
+### Vector Databases & Agno Abstractions
+
+- **Agno Abstraction Layer:** Complete abstraction for vector database operations
+- **LanceDB Integration:** Simple, clean integration through Agno's abstraction layer
+- **Key Insight:** No need to understand underlying vector DB mechanics for experimentation
+- **DevEX Excellence:** Agno team built abstractions that enable rapid prototyping
+- **Learning Efficiency:** Focus on concepts rather than implementation details
+- **Production Readiness:** Can dive deeper into specific components when needed
+
 ### Development Environment
 
 - **Container Architecture:** Docker Compose with Python devcontainer
@@ -34,6 +43,14 @@ This file captures insights, feedback, and learnings organized by concepts rathe
 - **Key Insight:** Isolated environment prevents conflicts and ensures reproducibility
 - **Python Setup:** Virtual environments with `uv` for modern package management
 - **Dependencies:** `agno`, `ollama`, `yfinance` successfully installed and tested
+
+### Python Package Management
+
+- **Current State:** Running individual files, not building complete systems
+- **Package Management:** Using `uv` for immediate package installation
+- **Learning Gap:** Need deeper understanding of Python package management
+- **Future Need:** Will require proper dependency management for production systems
+- **Key Learning:** Different approaches for experimentation vs deployment
 
 ---
 
@@ -50,6 +67,13 @@ This file captures insights, feedback, and learnings organized by concepts rathe
 - **Mode-Specific Rules:** Journal, Blog Post, Problem-Solving, Learning Review
 - **Goal Alignment:** Always connect to second brain vision
 - **Key Insight:** Clear rules ensure consistent, high-quality AI assistance
+
+### Strategic Learning Methodology
+
+- **Documentation-First Approach:** Read documentation before implementation
+- **Abstraction Understanding:** Leverage framework abstractions for rapid learning
+- **Concept-First Focus:** Learn AI/ML concepts through experimentation
+- **Key Insight:** Strategic approach prevents technical rabbit holes and accelerates learning
 
 ---
 
@@ -115,12 +139,21 @@ This file captures insights, feedback, and learnings organized by concepts rathe
 - [x] First Agno agent created
 - [x] Basic tool integration mastered
 
+### Level 2 Progress
+
+- [x] Local embedding models setup
+- [x] Vector database integration with Agno abstractions
+- [x] Working Level 2 agent with knowledge and memory
+- [x] Session management and conversation history
+- [x] Semantic search capabilities
+
 ### Environment Verification
 
 - [x] Ollama service running
 - [x] Python environment configured
 - [x] Dependencies installed
 - [x] First agent test successful
+- [x] Level 2 agent with knowledge base working
 
 ---
 
@@ -141,7 +174,7 @@ This file captures insights, feedback, and learnings organized by concepts rathe
 
 ---
 
-**Last Updated:** August 14, 2025  
-**Next Update:** After Level 2 agent exploration
+**Last Updated:** August 15, 2025  
+**Next Update:** After Level 3 agent exploration
 
 **Tags:** #learning-memory #knowledge-base #agno #concepts
