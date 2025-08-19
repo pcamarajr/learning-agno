@@ -16,6 +16,7 @@ This file captures insights, feedback, and learnings organized by concepts rathe
 - **Key Insight:** Local LLM setup eliminates API costs and enables unlimited experimentation
 - **Connection:** Use `host="http://ollama:11434"` for devcontainer setup
 - **Model Loading:** `llama3.2:3b` model successfully loaded and tested
+- **Memory Model:** Same model used for both agent reasoning and memory management
 
 ### Embedding Models & Local Infrastructure
 
@@ -43,6 +44,7 @@ This file captures insights, feedback, and learnings organized by concepts rathe
 - **Key Insight:** Isolated environment prevents conflicts and ensures reproducibility
 - **Python Setup:** Virtual environments with `uv` for modern package management
 - **Dependencies:** `agno`, `ollama`, `yfinance` successfully installed and tested
+- **Database Files:** SQLite databases stored in `tmp/` directory for persistence
 
 ### Python Package Management
 
@@ -51,6 +53,16 @@ This file captures insights, feedback, and learnings organized by concepts rathe
 - **Learning Gap:** Need deeper understanding of Python package management
 - **Future Need:** Will require proper dependency management for production systems
 - **Key Learning:** Different approaches for experimentation vs deployment
+
+### Memory and Reasoning Tools
+
+- **Memory System:** SQLite-based persistent memory with semantic understanding
+- **Critical Discovery:** `user_id` parameter required in `agent.print_response()` for memory to work
+- **Documentation Gap:** Official examples missing crucial `user_id` parameter
+- **Memory Workflow:** Create → Store → Retrieve pattern with user association
+- **Reasoning Tools:** `ReasoningTools(add_instructions=True)` enables step-by-step thinking
+- **Multi-User Support:** Different `user_id` values enable isolated memory spaces
+- **Key Insight:** Memory transforms agents from stateless to stateful, enabling personalization
 
 ---
 
@@ -85,11 +97,18 @@ This file captures insights, feedback, and learnings organized by concepts rathe
 - **Memory Management:** 8GB limit prevents system overload
 - **Port Conflicts:** Ensure proper port mapping in docker-compose
 
+### Documentation Issues
+
+- **Incomplete Examples:** Official docs may miss critical parameters
+- **Memory Debugging:** Always verify `user_id` parameter in `print_response()` calls
+- **Key Insight:** Create minimal working examples to verify understanding
+
 ### Common Solutions
 
 - **Service Restart:** `docker-compose restart ollama`
 - **Memory Issues:** Check container resource usage
 - **Port Issues:** Verify port availability and mapping
+- **Memory Issues:** Add `user_id` parameter to all `agent.print_response()` calls
 
 ---
 
@@ -147,6 +166,14 @@ This file captures insights, feedback, and learnings organized by concepts rathe
 - [x] Session management and conversation history
 - [x] Semantic search capabilities
 
+### Level 3 Progress
+
+- [x] Memory system implementation with SQLite backend
+- [x] Reasoning tools integration for step-by-step thinking
+- [x] Working Level 3 agent with persistent memory
+- [x] Critical documentation discovery (user_id requirement)
+- [x] Multi-user memory isolation testing
+
 ### Environment Verification
 
 - [x] Ollama service running
@@ -154,6 +181,7 @@ This file captures insights, feedback, and learnings organized by concepts rathe
 - [x] Dependencies installed
 - [x] First agent test successful
 - [x] Level 2 agent with knowledge base working
+- [x] Level 3 agent with memory and reasoning working
 
 ---
 
@@ -174,7 +202,7 @@ This file captures insights, feedback, and learnings organized by concepts rathe
 
 ---
 
-**Last Updated:** August 15, 2025  
-**Next Update:** After Level 3 agent exploration
+**Last Updated:** August 19, 2025  
+**Next Update:** After Level 4 agentic workflows exploration
 
-**Tags:** #learning-memory #knowledge-base #agno #concepts
+**Tags:** #learning-memory #knowledge-base #agno #concepts #memory #reasoning
