@@ -152,6 +152,44 @@ As a JavaScript developer, this feels similar to:
 
 The `user_id` requirement is similar to how you need to specify which user's data you're accessing in a multi-tenant application.
 
+## 🛠️ Contribution: Issue & PR Creation
+
+### **Issue Report**
+
+After discovering the documentation gap, I created an issue in the Agno documentation repository:
+
+**Issue:** [#429 - Level 3 Agent memory documentation missing user_id parameter](https://github.com/agno-agi/agno-docs/issues/429)
+
+**Problem:** The Level 3 Agent memory documentation examples were missing the crucial `user_id` parameter in `print_response()` calls, preventing memory functionality from working properly.
+
+### **Pull Request**
+
+I also created a pull request to fix the documentation:
+
+**PR:** [#430 - Fix Level 3 Agent memory documentation](https://github.com/agno-agi/agno-docs/pull/430)
+
+**Changes Made:**
+- Added `user_id="ava"` parameter to both `print_response()` calls in the Level 3 Agent example
+- Added concise comments explaining the memory linking functionality
+- Ensured the documentation examples will actually work for developers following them
+
+### **Learning from Contribution**
+
+This experience taught me:
+1. **Documentation Impact**: Small missing details can cause significant debugging time for developers
+2. **Open Source Contribution**: The process of identifying, reporting, and fixing documentation issues
+3. **Community Support**: How to provide constructive feedback while being supportive of the project
+4. **Technical Writing**: The importance of complete, working examples in technical documentation
+
+### **Future Contributions**
+
+This discovery opens up opportunities for:
+- Contributing more documentation improvements
+- Creating tutorials or examples for the Agno community
+- Helping other developers avoid similar debugging challenges
+- Building a relationship with the Agno development team
+
 ---
 
-**Tags:** #agno #memory #level-3-agent #debugging #documentation #ai-agents #user-id #persistence
+**Tags:** #agno #memory #level-3-agent #debugging #documentation #ai-agents #user-id #persistence #open-source #contribution
+
